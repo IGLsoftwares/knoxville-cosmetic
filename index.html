@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Knoxville Cosmetic &amp; Family Dentistry | Deerbrook Dr, Knoxville</title>
+<meta name="description" content="Cosmetic and family dentistry on Deerbrook Drive in West Knoxville. Call (865) 966-4035.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#fbf8f4;
+    --shell:#f3ece4;
+    --navy:#14213d;
+    --navy-2:#24345a;
+    --ink-soft:#5a6275;
+    --gold:#b8915a;
+    --gold-soft:#e8d8bf;
+    --blush:#ecd9d0;
+    --line:#e4dbcf;
+    --display:"Bodoni Moda", "Didot", Georgia, serif;
+    --body:"Jost", "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);font-weight:400;color:var(--navy);background:var(--ivory);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  .demo{background:var(--navy);color:#d9dceb;font-size:13px;text-align:center;padding:8px 16px}
+  .demo b{color:#fff;font-weight:500}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(251,248,244,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+  .brand{text-decoration:none;line-height:1}
+  .brand b{display:block;font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:.01em}
+  .brand span{display:block;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+  .links{display:flex;gap:34px;list-style:none;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+  .links a{text-decoration:none;color:var(--ink-soft);transition:color .2s}
+  .links a:hover{color:var(--navy)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font:500 14px var(--body);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:15px 26px;transition:background .25s, color .25s, transform .25s}
+  .btn-navy{background:var(--navy);color:var(--ivory)}
+  .btn-navy:hover{background:var(--navy-2);transform:translateY(-2px)}
+  .btn-line{border:1px solid var(--navy);color:var(--navy);background:transparent}
+  .btn-line:hover{background:var(--navy);color:var(--ivory)}
+
+  /* hero */
+  .hero{position:relative;padding:84px 0 0;overflow:hidden}
+  .hero-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+  .kicker{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(48px,8.2vw,124px);line-height:.92;letter-spacing:-.02em;margin-top:22px}
+  h1 em{font-style:italic;color:var(--gold)}
+  .rating{text-align:right;padding-bottom:12px}
+  .rating b{display:block;font-family:var(--display);font-size:64px;font-weight:400;line-height:1}
+  .rating span{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .rating .stars{display:block;color:var(--gold);letter-spacing:4px;margin:6px 0 4px}
+  .smile-arc{display:block;width:100%;height:auto;margin:38px 0 0}
+  .smile-arc path{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s .4s cubic-bezier(.6,.1,.2,1) forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  .hero-bottom{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;padding:40px 0 96px;align-items:start}
+  .lede{font-size:20px;font-weight:300;color:var(--ink-soft);max-width:30em}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .today{border:1px solid var(--line);background:#fff;padding:28px 30px;position:relative}
+  .today::before{content:"";position:absolute;left:-1px;top:-1px;width:44px;height:3px;background:var(--gold)}
+  .status{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500}
+  .dot{width:9px;height:9px;border-radius:50%;background:#b9bfcc}
+  .dot.open{background:#4caf7d;box-shadow:0 0 0 4px rgba(76,175,125,.18)}
+  .today ul{list-style:none;margin-top:16px;font-size:15px;color:var(--ink-soft)}
+  .today li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--line)}
+  .today li:last-child{border:0}
+  .today li.on{color:var(--navy);font-weight:500}
+  .today .tel{display:block;margin-top:18px;font-family:var(--display);font-size:30px;text-decoration:none}
+
+  .fade{opacity:0;transform:translateY(18px);animation:up 1s cubic-bezier(.2,.7,.2,1) forwards}
+  .f1{animation-delay:.1s}.f2{animation-delay:.25s}.f3{animation-delay:.45s}.f4{animation-delay:.65s}
+  @keyframes up{to{opacity:1;transform:none}}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  section{padding:120px 0}
+  .label{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+  .label::after{content:"";flex:0 0 60px;height:1px;background:var(--gold)}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.02;letter-spacing:-.015em}
+  h2 em{font-style:italic;color:var(--gold)}
+
+  /* services as an index list */
+  .svc-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+  .svc-wrap .intro p{color:var(--ink-soft);margin-top:22px;font-weight:300;font-size:18px}
+  .svc-list{list-style:none;border-top:1px solid var(--navy)}
+  .svc-list li{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line);transition:padding .35s, background .35s}
+  .svc-list li:hover{padding-left:14px;background:linear-gradient(90deg,var(--shell),transparent)}
+  .svc-list .n{font-family:var(--display);font-style:italic;color:var(--gold);font-size:20px}
+  .svc-list h3{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.15}
+  .svc-list p{color:var(--ink-soft);font-weight:300;margin-top:6px}
+
+  /* doctors */
+  .team{background:var(--shell)}
+  .team-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px;flex-wrap:wrap}
+  .team-head p{max-width:28em;color:var(--ink-soft);font-weight:300}
+  .docs{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .doc{background:var(--ivory);display:grid;grid-template-columns:180px 1fr;gap:28px;padding:28px;align-items:center}
+  .doc .ph{aspect-ratio:3/4;background:linear-gradient(170deg,var(--blush),#d8c2b4);position:relative;overflow:hidden}
+  .doc .ph::before{content:"";position:absolute;left:50%;top:26%;width:46%;aspect-ratio:1;border-radius:50%;background:#f4e7de;transform:translateX(-50%)}
+  .doc .ph::after{content:"";position:absolute;left:50%;bottom:-18%;width:92%;aspect-ratio:1;border-radius:50%;background:var(--navy);transform:translateX(-50%)}
+  .doc h3{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.1}
+  .doc .role{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:8px 0 12px}
+  .doc p{color:var(--ink-soft);font-weight:300;font-size:16px}
+  .ph-note{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);text-align:center}
+
+  /* reviews */
+  .quotes{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+  .big-quote{font-family:var(--display);font-size:clamp(30px,3.6vw,48px);line-height:1.18;font-style:italic}
+  .big-quote::before{content:"“";display:block;font-size:120px;line-height:.6;color:var(--gold);font-style:normal}
+  .small-quotes{display:grid;gap:22px}
+  .sq{border-left:2px solid var(--gold);padding:6px 0 6px 22px}
+  .sq p{font-family:var(--display);font-size:22px;line-height:1.35}
+  .sq span{display:block;margin-top:8px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+  .badges{display:flex;gap:48px;margin-top:64px;padding-top:36px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .badges div{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+  .badges b{display:block;font-family:var(--display);font-weight:400;font-size:44px;color:var(--navy);letter-spacing:0;text-transform:none;line-height:1.1}
+
+  /* booking */
+  .book{background:var(--navy);color:#e7e9f1}
+  .book .label{color:var(--gold-soft)}
+  .book .label::after{background:var(--gold-soft)}
+  .book h2 em{color:var(--gold-soft)}
+  .book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}
+  .book-grid > div > p{color:#b7bdd0;font-weight:300;font-size:18px;margin-top:22px;max-width:26em}
+  .book-grid a{color:#fff}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+  label{display:flex;flex-direction:column;gap:8px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#aab1c7}
+  label.full{grid-column:1/-1}
+  input,select,textarea{font:300 17px var(--body);color:#fff;background:transparent;border:0;border-bottom:1px solid #4a5779;padding:10px 0;outline:none;border-radius:0;transition:border-color .25s}
+  select option{color:var(--navy)}
+  input:focus,select:focus,textarea:focus{border-color:var(--gold-soft)}
+  textarea{resize:vertical;min-height:70px}
+  form .btn{grid-column:1/-1;background:var(--gold-soft);color:var(--navy);margin-top:10px;padding:18px}
+  form .btn:hover{background:#fff}
+  .note{grid-column:1/-1;font-size:12px;color:#8e96b0;text-align:center}
+  .thanks{grid-column:1/-1;display:none;padding:40px 0;text-align:center}
+  .thanks h3{font-family:var(--display);font-style:italic;font-weight:400;font-size:40px;color:var(--gold-soft)}
+  .thanks p{color:#b7bdd0;margin-top:10px}
+
+  /* visit */
+  .visit{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:stretch}
+  .visit dl{display:grid;gap:28px;margin-top:36px}
+  .visit dt{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+  .visit dd{font-size:19px;font-weight:300}
+  .visit dd a{text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+  .map{display:flex;min-height:400px;border:1px solid var(--line)}
+  .map iframe{flex:1;border:0;min-height:400px;filter:grayscale(.35) sepia(.12)}
+
+  footer.site{border-top:1px solid var(--line);padding:44px 0 40px;font-size:14px;color:var(--ink-soft)}
+  .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+
+  .callbar{display:none}
+
+  @media (max-width:920px){
+    .links,.nav .btn{display:none}
+    .hero{padding-top:56px}
+    .hero-top,.hero-bottom,.svc-wrap,.quotes,.book-grid,.visit{grid-template-columns:1fr}
+    .rating{text-align:left;padding:0}
+    .hero-bottom{gap:36px;padding-bottom:72px}
+    .docs{grid-template-columns:1fr}
+    section{padding:84px 0}
+    .svc-wrap{gap:36px}
+    .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px;box-shadow:0 10px 30px -10px rgba(20,33,61,.5)}
+    .callbar a{flex:1}
+    .callbar .btn-line{background:var(--ivory)}
+    footer.site{padding-bottom:100px}
+  }
+  @media (max-width:560px){
+    .wrap{padding:0 16px}
+    .doc{grid-template-columns:1fr;padding:22px}
+    .doc .ph{max-width:200px}
+    form{grid-template-columns:1fr}
+    .lede{font-size:18px}
+    .rating b{font-size:52px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .fade,.reveal{animation:none;opacity:1;transform:none;transition:none}
+    .smile-arc path{animation:none;stroke-dashoffset:0}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo"><b>Concept preview</b> prepared by WiseTech for Knoxville Cosmetic Dentistry. This is not the practice's official website.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><b>Knoxville Cosmetic</b><span>&amp; Family Dentistry</span></a>
+    <ul class="links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Our dentists</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-navy" href="#book">Book a visit</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <p class="kicker fade f1">West Knoxville · Deerbrook Drive</p>
+          <h1 class="fade f2">A smile you'll <em>want</em> to show.</h1>
+        </div>
+        <div class="rating fade f3">
+          <b>4.9</b>
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>285 Google reviews</span>
+        </div>
+      </div>
+      <svg class="smile-arc" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M10 12 C 300 96, 900 96, 1190 12" fill="none" stroke="#b8915a" stroke-width="1.5"/></svg>
+      <div class="hero-bottom">
+        <div class="fade f3">
+          <p class="lede">Cosmetic and family dentistry with a personal touch. Our team makes every patient feel cared for, like family, while delivering the kind of results you'll be proud to smile about.</p>
+          <div class="cta-row">
+            <a class="btn btn-navy" href="#book">Request an appointment</a>
+            <a class="btn btn-line" href="tel:+18659664035">(865) 966-4035</a>
+          </div>
+        </div>
+        <aside class="today fade f4" aria-label="Office hours">
+          <div class="status"><span class="dot" id="dot"></span><span id="status">Checking hours…</span></div>
+          <ul id="hours">
+            <li data-d="1"><span>Monday</span><span>8:00 – 5:00</span></li>
+            <li data-d="2"><span>Tuesday</span><span>8:00 – 5:00</span></li>
+            <li data-d="3"><span>Wednesday</span><span>8:00 – 5:00</span></li>
+            <li data-d="4"><span>Thursday</span><span>8:00 – 5:00</span></li>
+            <li data-d="5"><span>Friday – Sunday</span><span>Closed</span></li>
+          </ul>
+          <a class="tel" href="tel:+18659664035">(865) 966-4035</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap svc-wrap">
+      <div class="intro reveal">
+        <p class="label">What we do</p>
+        <h2>Beautiful work, <em>gentle hands.</em></h2>
+        <p>Whether you're here for a routine cleaning or a complete smile makeover, you'll get the same unhurried attention and honest advice.</p>
+      </div>
+      <ul class="svc-list reveal">
+        <li><span class="n">i.</span><div><h3>Teeth whitening</h3><p>Lift years of coffee and tea stains for a brighter, natural-looking smile.</p></div></li>
+        <li><span class="n">ii.</span><div><h3>Porcelain veneers</h3><p>Reshape chipped, gapped or uneven teeth with thin, custom-made porcelain.</p></div></li>
+        <li><span class="n">iii.</span><div><h3>Crowns &amp; bonding</h3><p>Repair and protect damaged teeth so they look and feel like your own.</p></div></li>
+        <li><span class="n">iv.</span><div><h3>Cleanings &amp; exams</h3><p>Thorough hygiene visits for the whole family, with a dentist check every time.</p></div></li>
+        <li><span class="n">v.</span><div><h3>Tooth-colored fillings</h3><p>Durable fillings that blend in, so nobody knows but you.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="wrap">
+      <div class="team-head reveal">
+        <div><p class="label">Our dentists</p><h2>Meet the <em>doctors.</em></h2></div>
+        <p>Patients mention them by name in their reviews again and again: kind, gentle, and always thorough.</p>
+      </div>
+      <div class="docs reveal">
+        <article class="doc"><div class="ph" role="img" aria-label="Photo placeholder"></div><div><h3>Dr. Harold S. Silber</h3><p class="role">Cosmetic &amp; family dentistry</p><p>A short bio about Dr. Silber's background, training and approach to care goes here.</p></div></article>
+        <article class="doc"><div class="ph" role="img" aria-label="Photo placeholder"></div><div><h3>Dr. Quang-Minh Huynh</h3><p class="role">General dentistry</p><p>A short bio about Dr. Huynh's background, training and approach to care goes here.</p></div></article>
+      </div>
+      <p class="ph-note">Doctor photos and bios to be added with the practice</p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <p class="label reveal">Patient reviews</p>
+      <div class="quotes">
+        <p class="big-quote reveal">The staff makes you feel extremely cared for and like you're family.</p>
+        <div class="small-quotes reveal">
+          <div class="sq"><p>“All while providing superior quality dental care and service.”</p><span>Google review</span></div>
+          <div class="sq"><p>“…came in after my cleaning and did a thorough check on my teeth.”</p><span>Google review</span></div>
+        </div>
+      </div>
+      <div class="badges reveal">
+        <div><b>4.9★</b>285 Google reviews</div>
+        <div><b>100%</b>recommend on Facebook</div>
+        <div><b>Mon–Thu</b>8 AM – 5 PM</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book" id="book">
+    <div class="wrap book-grid">
+      <div class="reveal">
+        <p class="label">Appointments</p>
+        <h2>Let's plan your <em>next visit.</em></h2>
+        <p>Send a request and our front desk will call you to find a time that works. Or reach us directly at <a href="tel:+18659664035">(865) 966-4035</a>.</p>
+      </div>
+      <form id="form" class="reveal" novalidate>
+        <label>First name<input name="first" autocomplete="given-name"></label>
+        <label>Last name<input name="last" autocomplete="family-name"></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" autocomplete="email"></label>
+        <label class="full">I'm interested in
+          <select name="reason"><option>Cleaning &amp; exam</option><option>Teeth whitening</option><option>Veneers or smile makeover</option><option>Crown or repair</option><option>Something else</option></select>
+        </label>
+        <label class="full">Message<textarea name="notes" placeholder="Optional"></textarea></label>
+        <button class="btn" type="submit">Send request</button>
+        <p class="note">Demo form: nothing is sent from this preview.</p>
+        <div class="thanks" id="thanks"><h3>Thank you.</h3><p>On the live site, this request would land in the front desk's inbox right away.</p></div>
+      </form>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap visit">
+      <div class="reveal">
+        <p class="label">Visit us</p>
+        <h2>Near <em>Turkey Creek.</em></h2>
+        <dl>
+          <div><dt>Address</dt><dd><a href="https://maps.google.com/?q=10642+Deerbrook+Dr,+Knoxville,+TN+37922" target="_blank" rel="noopener">10642 Deerbrook Dr<br>Knoxville, TN 37922</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+18659664035">(865) 966-4035</a></dd></div>
+          <div><dt>Hours</dt><dd>Monday – Thursday, 8 AM – 5 PM</dd></div>
+        </dl>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to the office" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=10642%20Deerbrook%20Dr%2C%20Knoxville%2C%20TN%2037922&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <a class="brand" href="#top"><b>Knoxville Cosmetic</b><span>&amp; Family Dentistry</span></a>
+    <span>10642 Deerbrook Dr, Knoxville, TN 37922 · (865) 966-4035</span>
+    <span>Concept design by WiseTech</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-line" href="tel:+18659664035">Call</a>
+  <a class="btn btn-navy" href="#book">Book a visit</a>
+</div>
+
+<script>
+  (function(){
+    var sched={1:[8,17],2:[8,17],3:[8,17],4:[8,17]};
+    var names=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+    var get=function(t){return (parts.find(function(p){return p.type===t})||{}).value};
+    var day=names.indexOf(get('weekday'));
+    var now=(+get('hour')%24)+(+get('minute'))/60;
+    var row=document.querySelector('#hours li[data-d="'+(day>=5||day===0?5:day)+'"]');
+    if(row) row.classList.add('on');
+    var fmt=function(x){var h=Math.floor(x),m=Math.round((x-h)*60);return (h%12||12)+(m?':'+String(m).padStart(2,'0'):'')+(h<12?' AM':' PM')};
+    var h=sched[day], open=h&&now>=h[0]&&now<h[1], msg;
+    if(open){msg='Open now · until '+fmt(h[1]);}
+    else{for(var i=0;i<8;i++){var d=(day+i)%7,s=sched[d];if(s&&(i>0||now<s[0])){msg='Closed · opens '+(i===0?'today':i===1?'tomorrow':names[d])+' '+fmt(s[0]);break;}}}
+    document.getElementById('dot').classList.toggle('open',!!open);
+    document.getElementById('status').textContent=msg;
+  })();
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target, ok=true;
+    ['first','last','phone'].forEach(function(n){var el=f.elements[n];var bad=!el.value.trim();el.style.borderColor=bad?'#e8a07a':'';if(bad)ok=false;});
+    if(!ok) return;
+    [].forEach.call(f.children,function(c){if(c.id!=='thanks')c.style.display='none'});
+    document.getElementById('thanks').style.display='block';
+  });
+</script>
+</body>
+</html>
